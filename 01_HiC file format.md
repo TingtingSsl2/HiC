@@ -11,3 +11,13 @@ fastq file
 
 ## .hic file format
 [.hic file format](https://github.com/aidenlab/hic-format/blob/master/HiCFormatV9.md)
+
+## workflow of Juicer (from fastq to .hic)
+[folder structure](https://bcm.app.box.com/v/juicerawsmirror/folder/11284128669)
+create an opt folder with 4 subdirs:
+- references
+- work
+- scripts
+- restriction sites
+
+Follow the installation instruction here (https://github.com/aidenlab/juicer/wiki/Installation)
