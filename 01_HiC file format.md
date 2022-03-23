@@ -36,5 +36,11 @@
   "The main advantage of Hi-C over previous methods is the ability to capture interactions over much larger genomic distances thereby producing scaffolds which can span a complete arm of the chromosome." [Scaffolding of long read assemblies using long range contact information, Jay Ghurye et.al, 2017]
   
 
+## To generate .hic  from fastq
+```
+cd /data/bioinformatics/tools/juicer/work/HIC003
+/data/bioinformatics/tools/juicer/scripts/juicer.sh -d /data/bioinformatics/tools/juicer/work/HIC003 -p /data/bioinformatics/tools/juicer/restriction_sites/hg38.chrom.sizes -y /data/bioinformatics/tools/juicer/restriction_sites/hg38_Arima.txt -z /data/bioinformatics/referenceGenome/Homo_sapiens/UCSC/hg38/Sequence/BWAIndex/genome.fa -D /data/bioinformatics/tools/juicer/juicer >juicer.log 2>&1
+```
+
   
   
