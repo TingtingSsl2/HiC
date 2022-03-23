@@ -30,3 +30,11 @@
   - need to copy scripts folder to /data/bioinformatics/tools/juicer/juicer  
   - need to copy scripts inside of juicer/LSF/scripts/ to /data/bioinformatics/tools/juicer/scripts (https://www.jianshu.com/p/4784c120b512)
   - add Arima) ligation to juicer.sh (https://github.com/aidenlab/juicer/issues/234)
+ 
+  
+## What does Salsa do?
+  "The main advantage of Hi-C over previous methods is the ability to capture interactions over much larger genomic distances thereby producing scaffolds which can span a complete arm of the chromosome." [Scaffolding of long read assemblies using long range contact information, Jay Ghurye et.al, 2017]
+  
+
+  
+  
