@@ -21,3 +21,10 @@ create an opt folder with 4 subdirs:
 - restriction sites
 
 Follow the installation instruction here (https://github.com/aidenlab/juicer/wiki/Installation)
+
+Create restriction sites file
+- juicer/misc/generate_site_positions.py
+- python generate_site_positions.py <enzyme> <genome ID>
+  
+Modify juicer.sh for ERISone
+juicer/LSF/scripts/juicer.sh
