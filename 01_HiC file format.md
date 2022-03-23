@@ -23,4 +23,4 @@
 - python generate_site_positions.py <enzyme> <genome ID>
   
 4. Modify juicer.sh for ERISone
-juicer/LSF/scripts/juicer.sh
+  juicer/LSF/scripts/juicer.sh
