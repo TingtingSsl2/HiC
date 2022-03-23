@@ -24,3 +24,9 @@
   
 4. Modify juicer.sh for ERISone
 - juicer/LSF/scripts/juicer.sh
+
+5. Tips
+  - remove aligned folder before rerun to avoid error
+  - need to copy scripts folder to /data/bioinformatics/tools/juicer/juicer  
+  - need to copy scripts inside of juicer/LSF/scripts/ to /data/bioinformatics/tools/juicer/scripts (https://www.jianshu.com/p/4784c120b512)
+  - add Arima) ligation to juicer.sh (https://github.com/aidenlab/juicer/issues/234)
