@@ -13,8 +13,7 @@ fastq file
 [.hic file format](https://github.com/aidenlab/hic-format/blob/master/HiCFormatV9.md)
 
 ## Workflow of Juicer (from fastq to .hic)
-[folder structure](https://bcm.app.box.com/v/juicerawsmirror/folder/11284128669)
-1. create an opt folder with 4 subdirs:
+1. create an opt folder with 4 subdirs: [folder structure](https://bcm.app.box.com/v/juicerawsmirror/folder/11284128669)
 - references
 - work
 - scripts
@@ -22,7 +21,7 @@ fastq file
 
 2. Follow the installation instruction here (https://github.com/aidenlab/juicer/wiki/Installation)
 
-3. Create restriction sites file
+3. Create restriction sites file (https://github.com/aidenlab/juicer/wiki/Installation)
 - juicer/misc/generate_site_positions.py
 - python generate_site_positions.py <enzyme> <genome ID>
   
