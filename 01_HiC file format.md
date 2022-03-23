@@ -46,5 +46,7 @@ cd /data/bioinformatics/tools/juicer/work/HIC003
   -D /data/bioinformatics/tools/juicer/juicer >juicer.log 2>&1
 ```
 
+## Juicebox to visualize .hic file 
+https://aidenlab.gitbook.io/juicebox/juicebox-web
   
   
