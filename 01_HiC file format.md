@@ -172,5 +172,6 @@ $chr6$bed
 10   chr6    4050000   4200000 boundary
 ```
                                                                 
-                                                                
+## Finding A/B compartment using Juicer
+HiCDCPlus can call Juicer eigenvector function to determine A/B compartments from .hic files.                                                                
                                                                 
