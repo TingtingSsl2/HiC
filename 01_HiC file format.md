@@ -65,6 +65,7 @@ https://aidenlab.gitbook.io/juicebox/juicebox-web
   - add_hic_counts
   - expand_1D_features
   - HiCDCPlus
+  - output is a gi_list object
 
   ```
   > head(as.data.frame(gi_list[[1]][gi_list[[1]]$qvalue<=0.05]))
