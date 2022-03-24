@@ -56,16 +56,10 @@ https://aidenlab.gitbook.io/juicebox/juicebox-web
   - generate_bintolen_gi_list, generate gi_list instance
   - add_hic_counts, add .hic counts
   - expand_1D_features, expand features for modeling
-  - HiCDCPlus_parallel, this function finds significant interactions in a HiC-DC readable matrix and expresses statistical significance of counts through the following with a parallel implementation (using sockets; compatible with Windows): 'pvalue': significance P-value, 'qvalue': FDR corrected P-value, mu': expected counts, 'sdev': modeled standard deviation of expected counts.
+  - HiCDCPlus, this function finds significant interactions in a HiC-DC readable matrix and expresses statistical significance of counts through the following with a parallel implementation (using sockets; compatible with Windows): 'pvalue': significance P-value, 'qvalue': FDR corrected P-value, mu': expected counts, 'sdev': modeled standard deviation of expected counts.
   - result, 21118-03-01_inter_30_combined_result.hic, write normalized counts (observed/expected) to a .hic file
   - result, 21118-03-01_inter_30_combined_result.txt, write normalized counts (observed/expected) to a .txt file
-  # Finding Differential Interactions
-  - construct_features
-  - generate_bintolen_gi_list
-  - add_hic_counts
-  - expand_1D_features
-  - HiCDCPlus
-  - output is a gi_list object
+  - output，a gi_list object
 
   ```
   > head(as.data.frame(gi_list[[1]][gi_list[[1]]$qvalue<=0.05]))
@@ -84,9 +78,9 @@ https://aidenlab.gitbook.io/juicebox/juicebox-web
 5 0.5019 49866  300000    243 1.014  0.11610 20.887 15.626 0.000000007039 0.00004896
 6 0.4953 49317  200000    284 1.797 -0.08090 32.160 23.697 0.000000820020 0.00187329
 ```
-## Differential analysis using modified DESeq2
-- hicdcdiff
-- output, DESeq-processed matrices (in a .txt file)
+  # Differential analysis using modified DESeq2
+  - hicdcdiff
+  - output, DESeq-processed matrices (in a .txt file)
 ```
 (base) [tz949@eris1n3 diff_analysis_example]$ zcat diff_resACMoverSR_chr10.txt.gz | head
 chr	startI	startJ	baseMean	log2FoldChange	lfcSE	stat	pvalue	padj
