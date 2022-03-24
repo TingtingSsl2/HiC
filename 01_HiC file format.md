@@ -178,3 +178,4 @@ The input data are a Hi-C contact map, where entries are contact frequencies bet
 ## Finding A/B compartment using Juicer
 HiCDCPlus can call Juicer eigenvector function to determine A/B compartments from .hic files.                                                                
                                                                 
+Regions that have more frequent interactions are classified as A compartment, representing transcription active compartment, regions with less interactions are classified as B compartment, representing transcription inactive compartment. 
