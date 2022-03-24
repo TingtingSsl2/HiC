@@ -52,7 +52,10 @@ https://aidenlab.gitbook.io/juicebox/juicebox-web
   
 ## HiCDC+ workflow
   - construct_features, output is "hg38_50kb_GATC_GANTC_bintolen.txt.gz
-  - 
+  - generate_bintolen_gi_list, generate gi_list instance
+  - add_hic_counts, add .hic counts
+  - expand_1D_features, expand features for modeling
+  - HiCDCPlus_parallel, this function finds significant interactions in a HiC-DC readable matrix and expresses statistical significance of counts through the following with a parallel implementation (using sockets; compatible with Windows): 'pvalue': significance P-value, 'qvalue': FDR corrected P-value, mu': expected counts, 'sdev': modeled standard deviation of expected counts.
  
 
   
