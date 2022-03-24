@@ -51,14 +51,38 @@ https://aidenlab.gitbook.io/juicebox/juicebox-web
   
   
 ## HiCDC+ workflow
+  # Finding Significant Interactions
   - construct_features, output is "hg38_50kb_GATC_GANTC_bintolen.txt.gz
   - generate_bintolen_gi_list, generate gi_list instance
   - add_hic_counts, add .hic counts
   - expand_1D_features, expand features for modeling
   - HiCDCPlus_parallel, this function finds significant interactions in a HiC-DC readable matrix and expresses statistical significance of counts through the following with a parallel implementation (using sockets; compatible with Windows): 'pvalue': significance P-value, 'qvalue': FDR corrected P-value, mu': expected counts, 'sdev': modeled standard deviation of expected counts.
- 
+  - result, 21118-03-01_inter_30_combined_result.hic, write normalized counts (observed/expected) to a .hic file
+  - result, 21118-03-01_inter_30_combined_result.txt, write normalized counts (observed/expected) to a .txt file
+  # Finding Differential Interactions
+  - construct_features
+  - generate_bintolen_gi_list
+  - add_hic_counts
+  - expand_1D_features
+  - HiCDCPlus
 
-  
+  ```
+  > head(as.data.frame(gi_list[[1]][gi_list[[1]]$qvalue<=0.05]))
+  seqnames1  start1    end1 width1 strand1    gc1  len1 seqnames2  start2    end2 width2 strand2
+1      chr1 2400000 2450000  50001       * 0.5959 49538      chr1 3400000 3450000  50001       *
+2      chr1 3000000 3050000  50001       * 0.5368 49894      chr1 3400000 3450000  50001       *
+3      chr1 3900000 3950000  50001       * 0.5272 48448      chr1 5900000 5950000  50001       *
+4      chr1 7950000 8000000  50001       * 0.4730 49698      chr1 8300000 8350000  50001       *
+5      chr1 8000000 8050000  50001       * 0.4372 49539      chr1 8300000 8350000  50001       *
+6      chr1 9250000 9300000  50001       * 0.5184 48766      chr1 9450000 9500000  50001       *
+     gc2  len2       D counts    gc      len     mu   sdev         pvalue     qvalue
+1 0.5584 49369 1000000     40 3.090  0.04231  4.598  3.926 0.000008243074 0.01045541
+2 0.5584 49369  400000    115 2.570  0.09496 13.562 10.378 0.000002637755 0.00426998
+3 0.4705 49480 2000000     28 1.625 -0.10474  2.506  2.391 0.000001171610 0.00241764
+4 0.5019 49866  350000    157 1.407  0.13966 17.302 13.059 0.000000767771 0.00181313
+5 0.5019 49866  300000    243 1.014  0.11610 20.887 15.626 0.000000007039 0.00004896
+6 0.4953 49317  200000    284 1.797 -0.08090 32.160 23.697 0.000000820020 0.00187329
+```
   
   
   
