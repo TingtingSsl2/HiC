@@ -104,6 +104,7 @@ ICE (iterative correction and eigenvector decomposition) normalization (Imakaev 
 HiCDCPlus converts the gi_list instance with ICE normalized counts into TAD annotations through an implementation of TopDom. 
 https://github.com/HenrikBengtsson/TopDom
 https://github.com/jasminezhoulab/TopDom/blob/master/TopDom%20Manual_v0.0.2.pdf
+- gi_list_topdom
                                                                 
                                                                 
                                                                 
