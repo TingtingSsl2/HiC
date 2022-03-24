@@ -171,7 +171,9 @@ $chr6$bed
 9    chr6    3700000   4050000   domain
 10   chr6    4050000   4200000 boundary
 ```
-                                                                
+ ### How does TopDom define TAD?
+The input data are a Hi-C contact map, where entries are contact frequencies between any two chromatin segments (i.e. bins in the data matrix). Our method has three steps: (i) For each bin, we generate a value binSignal by computing the average contact frequency among pairs of chromatin regions (one upstream, the other downstream) in a small window surrounding the bin. This step results in a curve binSignal(i) that runs along the chromosome. (ii) Discover TD boundaries as local minima in the binSignal(i) series. (iii) Filter out false detections in the local minima by statistical testing. Each step is described in more detail below.
+                 
 ## Finding A/B compartment using Juicer
 HiCDCPlus can call Juicer eigenvector function to determine A/B compartments from .hic files.                                                                
                                                                 
