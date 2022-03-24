@@ -100,61 +100,6 @@ ICE (iterative correction and eigenvector decomposition) normalization (Imakaev 
 - inout file is .hic from Juicer
 - output a ICE normalized .hic file to the input .hic path
 ```
-$chr5$bed
-    chrom chromStart  chromEnd     name
-1    chr5      50000    300000   domain
-2    chr5     300000   1200000   domain
-3    chr5    1200000   2150000   domain
-4    chr5    2150000   2600000   domain
-5    chr5    2600000   4850000   domain
-6    chr5    4850000   5500000   domain
-7    chr5    5500000   6250000   domain
-8    chr5    6250000   6600000   domain
-9    chr5    6600000   6750000   domain
-10   chr5    6750000   7900000   domain
-
-
-$chr6
-$chr6$binSignal
-     id  chr from.coord to.coord local.ext mean.cf        pvalue
-1     1 chr6     150000   200000         0  140.95 0.70922949878
-2     2 chr6     200000   250000         0  133.18 0.99890500028
-3     3 chr6     250000   300000         0  114.81 0.99972475233
-4     4 chr6     300000   350000         0   93.49 0.98759726449
-5     5 chr6     350000   400000         0   71.41 0.61237715408
-6     6 chr6     400000   450000         0   56.77 0.05156772206
-7     7 chr6     450000   500000         0   47.91 0.00108598591
-8     8 chr6     500000   550000        -1   39.43 0.00000027796
-9     9 chr6     550000   600000         0   41.03 0.00036761144
-10   10 chr6     600000   650000         1   53.89 0.83880180345
-
-$chr6$domain
-     chr from.id from.coord to.id to.coord      tag    size
-1   chr6       1     150000     8   550000   domain  400000
-2   chr6       9     550000    13   800000   domain  250000
-3   chr6      14     800000    29  1600000   domain  800000
-4   chr6      30    1600000    39  2100000   domain  500000
-5   chr6      40    2100000    52  2750000   domain  650000
-6   chr6      53    2750000    59  3100000   domain  350000
-7   chr6      60    3100000    62  3250000   domain  150000
-8   chr6      63    3250000    71  3700000   domain  450000
-9   chr6      72    3700000    78  4050000   domain  350000
-10  chr6      79    4050000    81  4200000 boundary  150000
-
-$chr6$bed
-    chrom chromStart  chromEnd     name
-1    chr6     150000    550000   domain
-2    chr6     550000    800000   domain
-3    chr6     800000   1600000   domain
-4    chr6    1600000   2100000   domain
-5    chr6    2100000   2750000   domain
-6    chr6    2750000   3100000   domain
-7    chr6    3100000   3250000   domain
-8    chr6    3250000   3700000   domain
-9    chr6    3700000   4050000   domain
-10   chr6    4050000   4200000 boundary
-
-
 > head(gi_list[[sample]])
 $chr1
 GInteractions object with 333178 interactions and 2 metadata columns:
@@ -176,8 +121,6 @@ GInteractions object with 333178 interactions and 2 metadata columns:
   seqinfo: 1 sequence from an unspecified genome; no seqlengths
 ```
                                                                 
-                                                                
-
 ## Finding TADs using TopDom
 HiCDCPlus converts the gi_list instance with ICE normalized counts into TAD annotations through an implementation of TopDom. 
 https://github.com/HenrikBengtsson/TopDom
