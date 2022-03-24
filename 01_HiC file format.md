@@ -94,3 +94,5 @@ chr10	3150000	4750000	73.7449331664501	0.0156950151676941	0.199510810233499	0.07
 chr10	3150000	4800000	27.6565439780342	0.236774331200241	0.242904634632286	0.974762509404875	0.329678077828567	0.999290292241651
 chr10	3200000	3750000	76.0127604814415	0.183274509750465	0.199625873942567	0.918089955629666	0.358571772975857	0.999290292241651
 ```
+  ## ICE normalization using HiTC
+ICE (iterative correction and eigenvector decomposition) normalization (Imakaev et al. 2012a) functions by modeling the expected 𝐼𝐼𝐹𝐹𝑖𝑖𝑖𝑖 for every pair of regions (i,j) as 𝐸𝐸𝑖𝑖𝑖𝑖 = 𝐵𝐵𝑖𝑖𝐵𝐵𝑖𝑖𝑇𝑇𝑖𝑖𝑖𝑖, where 𝐵𝐵𝑖𝑖 and 𝐵𝐵𝑖𝑖 are the biases and 𝑇𝑇𝑖𝑖𝑖𝑖 is the true matrix of normalized IFs. The maximum likelihood solution for the biases 𝐵𝐵𝑖𝑖 is obtained by iterative correction. It attempts to make all regions equally visible and was shown to perform as well as the explicit bias correction method by Yaffe and Tanay (Belton et al. 2012). ICE normalization can be performed using the HiTC R package’s normICE function or as a step of the Hi-C processing pipeline HiC-Pro.
