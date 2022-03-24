@@ -50,3 +50,15 @@ cd /data/bioinformatics/tools/juicer/work/HIC003
 https://aidenlab.gitbook.io/juicebox/juicebox-web
   
   
+## HiCDC+ workflow
+  - construct_features, output is "hg38_50kb_GATC_GANTC_bintolen.txt.gz
+  - 
+ 
+
+  
+  
+  
+  
+  
+  
+  
