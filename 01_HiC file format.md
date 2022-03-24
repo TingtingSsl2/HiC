@@ -83,9 +83,6 @@ https://aidenlab.gitbook.io/juicebox/juicebox-web
 5 0.5019 49866  300000    243 1.014  0.11610 20.887 15.626 0.000000007039 0.00004896
 6 0.4953 49317  200000    284 1.797 -0.08090 32.160 23.697 0.000000820020 0.00187329
 ```
-  
-  
-  
-  
-  
-  
+## Differential analysis using modified DESeq2
+- hicdcdiff
+                                                                
