@@ -179,4 +179,5 @@ The input data are a Hi-C contact map, where entries are contact frequencies bet
 HiCDCPlus can call Juicer eigenvector function to determine A/B compartments from .hic files.                                                                
                                                                 
 Regions that have more frequent interactions are classified as A compartment, representing transcription active compartment, regions with less interactions are classified as B compartment, representing transcription inactive compartment. 
-https://link.springer.com/protocol/10.1007/978-1-4939-8766-5_16
+https://github.com/Jfortin1/TCGA_AB_Compartments
+                 https://link.springer.com/protocol/10.1007/978-1-4939-8766-5_16
