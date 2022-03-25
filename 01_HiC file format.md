@@ -181,3 +181,7 @@ HiCDCPlus can call Juicer eigenvector function to determine A/B compartments fro
 Regions that have more frequent interactions are classified as A compartment, representing transcription active compartment, regions with less interactions are classified as B compartment, representing transcription inactive compartment. 
 https://github.com/Jfortin1/TCGA_AB_Compartments
                  https://link.springer.com/protocol/10.1007/978-1-4939-8766-5_16
+
+### What are the diagnosis plots from hicdcdiff?
+geomean_sizefactors_chr1.pdf
+diagnostic plots of the normalization factors, geometric means of such factors by distance bin
