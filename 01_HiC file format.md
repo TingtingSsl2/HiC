@@ -80,7 +80,7 @@ https://aidenlab.gitbook.io/juicebox/juicebox-web
 ```
                                                                 
 ```
-(base) [tz949@eris1n2 sigInter]$ zcat 21118-03-01_inter_30_combined_result.txt.gz | head
+zcat 21118-03-01_inter_30_combined_result.txt.gz | head
 chrI	startI	endI	chrJ	startJ	endJ	D	counts	pvalue	qvalue	mu	sdev
 chr1	0	50000	chr1	0	50000	0	0	1	1	56.3364975810299	41.2656541703306
 chr1	0	50000	chr1	50000	100000	50000	0	1	1	97.21884572958	70.7142810521942
